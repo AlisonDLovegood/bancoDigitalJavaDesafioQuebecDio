@@ -1,9 +1,9 @@
 package Banco;
 
 public class Cliente {
-    private String nome;
+    private static String nome;
 
-    public String getNome() {
+    public static String getNome() {
         return nome;
     }
 

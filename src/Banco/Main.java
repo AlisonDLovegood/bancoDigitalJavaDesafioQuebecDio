@@ -12,5 +12,12 @@ public class Main {
 
         cc.imprimirExtrato();
         cp.imprimirExtrato();
+
+        imprimirTitularesAtivos();
+    }
+
+    private static void imprimirTitularesAtivos() {
+        System.out.println("-----\tLista de Clientes\t-----");
+        System.out.println(Cliente.getNome());
     }
 }

@@ -32,12 +32,18 @@ public abstract class Conta implements IConta {
 
     @Override
     public void sacar(double valor) {
-        saldo -= valor;
+        if (valor>0){
+            saldo -= valor;
+            System.out.println("Saque de R$"+valor+" efetivado com sucesso!");
+        }
     }
 
     @Override
     public void depositar(double valor) {
-        saldo += valor;
+        if (valor>0){
+            saldo += valor;
+            System.out.println("Deposito de R$"+valor+" efetivado com sucesso!");
+        }
     }
 
     @Override
